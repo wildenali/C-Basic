@@ -47,9 +47,43 @@ Dengan kata lain, tidak ada bilangan yang lebih besar dari 21
 yang dapat membagi habis bilangan 147, 189 dan 231.
 */
 
-int main {
+
+// Program yg ini coba untuk mencari faktorial dari 2 buah bilangan
+
+int main() {
 	
+  printf("\n====================GCD Using FOR LOOP and IF Statement ====================\n");
+  int n1, n2, i, gcd;
+  printf("Enter two integers: ");
+  scanf("%d %d", &n1, &n2);
+  for (i = 1; i <= n1 && i <= n2; ++i)
+  {
+    if (n1%i == 0 && n2%i==0)   // chec if i is factor of both integers
+    {
+      gcd = i;
+    }
+  }
+  printf("G.C.D of %d and %d is %d", n1, n2, gcd);
+  printf("\n====================GCD Using FOR LOOP and IF Statement ====================\n\n\n");
 	
-	
+  printf("\n====================GCD Using WHILE LOOP and IF Statement ====================\n");
+  int n3, n4;
+  printf("Enter two positive integers: ");
+  scanf("%d %d", &n3, &n4);
+  while (n3 != n4)
+  {
+    if (n3 > n4)
+    {
+      n3 -= n4;
+    }
+    else {
+      n4 -= n3;
+    }
+    
+  }
+  
+  printf("G.C.D = %d", n3);
+  printf("\n====================GCD Using WHILE LOOP and IF Statement ====================\n");
+  
 	return 0;
 }
