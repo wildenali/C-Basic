@@ -61,9 +61,39 @@ int main() {
         }
         
     }
+    printf("\n==================== Latihan Bilangan PRIMA ====================\n\n");
     
+
+    printf("\n==================== Latihan Bilangan PRIMA antara dua bilangan ====================\n");
+    int low, high, ii, bendera;
+    printf("Masukan Dua buah angka: ");
+    scanf("%d %d", &low, &high);
+    printf("Prime number between %d and %d are: ", low, high);
+
+    while (low < high)
+    {
+        bendera = 0;
+
+        // if is a non-prime number, flag will be 1
+        for (ii = 2; ii <= low/2; ++ii)
+        {
+            if (low % ii == 0)
+            {
+                bendera = 1;
+                break;
+            }
+        }
+        if (bendera == 0)
+        {
+            printf("%d ", low);
+        }
+        ++low;
+        
+
+    }
     
-    
+    printf("\n==================== Latihan Bilangan PRIMA antara dua bilangan ====================\n");
+
 
 
     return 0;
