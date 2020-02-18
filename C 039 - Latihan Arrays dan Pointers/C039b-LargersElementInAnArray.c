@@ -21,7 +21,7 @@ int main() {
         }
     }
 
-    printf("Largest element = %.2f", arr[0]);
+    printf("Bilangan Terbesarnya adalah = %.2f", arr[0]);
     
     
 
