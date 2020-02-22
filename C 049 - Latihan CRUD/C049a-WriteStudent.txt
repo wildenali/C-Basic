@@ -7,3 +7,28 @@ Marks : 112
 Name  : den 
 Marks : 113 
 
+Name  : alii
+Marks : 114
+Name  : wildeeen
+Marks : 333
+Name  : bambang
+Marks : 1101
+
+Name  : kairav
+Marks : 1102
+
+Name  : kris
+Marks : 1103
+
+Name  : john
+Marks : 1104
+
+Name  : peter
+Marks : 1105
+
+Name  : Mark
+Marks : 202
+
+Name  : stephanie
+Marks : 2220
+
