@@ -11,7 +11,7 @@ int main() {
     struct threeNum num;
     FILE *fptr;
 
-    if ((fptr = fopen("D://Upgrade Yourself/wildenali github/C-Basic/C 048 - CRUD basic/C048c-WriteToaBinary.bin","wb")) == NULL)
+    if ((fptr = fopen("D://Upgrade Yourself/wildenali github/C-Basic/C 048 - CRUD basic/C048c-WriteToaBinary.bin","rb")) == NULL)
     {
         printf("Error! Opening File");
         exit(1);
@@ -19,13 +19,11 @@ int main() {
 
     for (n = 1; n < 5; n++)
     {
-        num.n1 = n;
-        num.n2 = n*2;
-        num.n3 = n*4;
-        fwrite(&num, sizeof(struct threeNum), 1, fptr);
+        fread(&num, sizeof(struct threeNum), 1, fptr);
+        printf("n1: %d\tn2: %d\tn3: %d\n", num.n1, num.n2, num.n3);
     }
+
     fclose(fptr);
-    
     
 
     return 0;
